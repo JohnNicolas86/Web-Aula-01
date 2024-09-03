@@ -55,14 +55,42 @@
             padding: 20px;
         }
         footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #D98F4E;
-            color: white;
-            width: 100%;
-            box-sizing: border-box;
-            margin: 0;
+            background-color: #0E1626; 
+            padding: 20px; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            color: #fff;
             
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px; 
+            box-sizing: border-box; 
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .whatsapp-icon {
+            height: 2em; 
+            width: 2em; 
+            margin-right: 10px; 
+        }
+        
+        
+        .signup-info {
+            text-align: center; 
+        }
+        
+       
+        .signup-info nav p {
+            margin-top: 10px; 
         }
         @font-face {
             font-family: 'Billing-Lottre';
@@ -77,7 +105,7 @@
 #guia02{
     font-size: 20px;
     color: #ac353f;
-    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'), Arial, sans-serif;
+    font-family: @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'), Arial, sans-serif;
     
 }
 #lista01:hover{
@@ -96,7 +124,7 @@
             border-radius: 50%;
         }
 #pessoascomendo{
-    height: 398px;
+    height: 380px;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -123,8 +151,15 @@ input:hover{
     position: absolute;
     left: 5%;
     top: -2%;
+        }
+        #formulario01:visited{
+            color: #fff;
+        }
+        #formulario01:hover{
+        color: #F28907;
+        text-decoration: underline;
+        }
 
-}
     </style>
 </head>
 <body background="imagens/fundo6.jpg"></body>
@@ -143,7 +178,7 @@ input:hover{
 
 <section id="Quem Somos">
     <h2>Quem somos</h2>
-    <p>Apaixonados pela gastronomia que Campinas tem a oferecer, nós do <em>GUIA DE SABORES</em> seremos o seu guia definitivo para descobrir os melhores lugares para apreciar a gastronomia mundial.
+    <p>Apaixonados pela gastronomia que Campinas tem a oferecer, nós do <em>Sabor a Mais</em> seremos o seu guia definitivo para descobrir os melhores lugares para apreciar a gastronomia mundial.
         Aqui, você encontrará recomendações detalhadas de restaurantes que oferecem uma verdadeira experiência culinária, 
         desde as tradicionais cozinhas europeias até os sabores exóticos do Japão, da Coreia e da Tailândia.
         Seja você um amante dos pratos clássicos da Europa, ou um entusiasta das especiarias e técnicas únicas da culinária asiática,
@@ -152,7 +187,7 @@ input:hover{
 </section>
 
 <h2 id="bateufome">Eae Bateu A Fome?</h2>
-    <img id="pessoascomendo" src="imagens02/oIG403.png" alt="fotos de pessoas comendo">
+<img id="pessoascomendo" src="imagens02/OIG403.png" alt="fotos de pessoas comendo">
 <p id="textocomun">Então Venha descobrir lugares <br> para você aproveita com sua familia e amigos</p>
 
 <section id="Indicações">
@@ -263,13 +298,23 @@ input:hover{
 
 <section id="Contato">
 
-<footer>
-    <img src = "imagens/Dtafalonso-Android-L-WhatsApp.48.png">
-    <nav>
-        <p>Entre em contato conosco através do whatsapp</p>
-    </nav>
-    <p> (19)999999999.</p>
-</footer>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <img src="imagens/Dtafalonso-Android-L-WhatsApp.48.png" alt="WhatsApp" class="whatsapp-icon">
+                <p>(19) 99899-9899
+                    <br>
+                    Entre em contato conosco através do WhatsApp
+                </p>               
+            </div>
+            <div class="signup-info">
+                <p>Quer divulgar seu site?</p>
+                <div>
+                    <p id="formulario01"><a href="formulario.html">clique aqui</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </section>
 </body>
 </html
