@@ -89,26 +89,5 @@
         <input type="submit" value="Cadastrar">
     </form>
 </div>
-
-<script>
-    // Validação simples no lado do cliente
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        const nome = document.getElementById('nome').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const telefone = document.getElementById('telefone').value.trim();
-        const errorMessage = document.getElementById('error-message');
-
-        errorMessage.textContent = '';
-
-        if (nome === '' || email === '' || telefone === '') {
-            event.preventDefault();
-            errorMessage.textContent = 'Todos os campos são obrigatórios.';
-        } else if (!/^[\d]{10,11}$/.test(telefone)) {
-            event.preventDefault();
-            errorMessage.textContent = 'O telefone deve conter apenas números e ter 10 ou 11 dígitos.';
-        }
-    });
-</script>
-
 </body>
 </html>
